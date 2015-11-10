@@ -1,0 +1,11 @@
+README.rst
+setup.py
+src/janitoo_hostsensor_lmsensor/__init__.py
+src/janitoo_hostsensor_lmsensor/component.py
+src/janitoo_hostsensor_lmsensor.egg-info/PKG-INFO
+src/janitoo_hostsensor_lmsensor.egg-info/SOURCES.txt
+src/janitoo_hostsensor_lmsensor.egg-info/dependency_links.txt
+src/janitoo_hostsensor_lmsensor.egg-info/entry_points.txt
+src/janitoo_hostsensor_lmsensor.egg-info/not-zip-safe
+src/janitoo_hostsensor_lmsensor.egg-info/requires.txt
+src/janitoo_hostsensor_lmsensor.egg-info/top_level.txt
