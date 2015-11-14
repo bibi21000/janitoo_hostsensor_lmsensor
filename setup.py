@@ -96,8 +96,11 @@ setup(
     package_dir = { '': 'src' },
     keywords = "computer,cpu",
     install_requires=[
-                     'janitoo_hostsensor == %s'%janitoo_version,
+                     'janitoo_hostsensor >= %s'%"0.0.6",
                      'PySensors == 0.0.3',
                     ],
+    dependency_links = [
+      'https://github.com/bibi21000/janitoo_hostsensor/archive/master.zip#egg=janitoo_hostsensor-%s'%"0.0.7",
+    ],
     entry_points = janitoo_entry_points,
 )
