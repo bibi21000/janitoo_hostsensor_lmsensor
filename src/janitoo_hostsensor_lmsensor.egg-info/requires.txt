@@ -1,2 +1,0 @@
-janitoo_hostsensor == 0.0.6
-PySensors == 0.0.3

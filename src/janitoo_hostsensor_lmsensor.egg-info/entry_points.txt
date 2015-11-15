@@ -1,3 +1,0 @@
-[janitoo.components]
-hostsensor.lmsensor = janitoo_hostsensor_lmsensor.component:make_lmsensor
-
