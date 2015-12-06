@@ -1,6 +1,6 @@
 .. image:: https://travis-ci.org/bibi21000/janitoo_hostsensor_lmsensor.svg?branch=master
     :target: https://travis-ci.org/bibi21000/janitoo_hostsensor_lmsensor
-    :alt: Travis test status
+    :alt: Travis status
 
 .. image:: https://coveralls.io/repos/bibi21000/janitoo_hostsensor_lmsensor/badge.svg?branch=master&service=github
     :target: https://coveralls.io/github/bibi21000/janitoo_hostsensor_lmsensor?branch=master
