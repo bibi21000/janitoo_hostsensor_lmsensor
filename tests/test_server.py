@@ -76,6 +76,7 @@ class TestHostSensorSerser(JNTTServer, JNTTServerCommon):
             self.stop()
 
     def test_111_server_start_no_error_in_log(self):
+        self.skipCITest()
         self.start()
         try:
             time.sleep(120)
