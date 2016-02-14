@@ -85,3 +85,13 @@ class TestHostSensorSerser(JNTTServer, JNTTServerCommon):
         finally:
             self.stop()
 
+    def test_112_request_nodes_and_values(self):
+        self.onlyRasperryTest()
+        self.start()
+        try:
+            self.assertHeartbeatNode()
+            time.sleep(5)
+            for request in NETWORK_REQUESTS:
+                self.assertNodeRequest(cmd_class=COMMAND_DISCOVERY, uuid=request, node_hadd=HADD%(1048,0), client_hadd=HADD%(9999,0))
+        finally:
+            self.stop()
