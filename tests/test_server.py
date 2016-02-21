@@ -64,13 +64,7 @@ class TestHostSensorSerser(JNTTServer, JNTTServerCommon):
     server_conf = "tests/data/janitoo_hostsensor.conf"
     hadds = [HADD%(1048,0), HADD%(1048,1)]
 
-    def test_101_server_start_no_error_in_log(self):
+    def test_040_server_start_no_error_in_log(self):
         self.skipCITest()
-        self.start()
-        try:
-            time.sleep(120)
-        finally:
-            self.stop()
-        self.assertNotInLogfile('^ERROR ')
-        self.assertInLogfile('Found heartbeats in timeout')
+        JNTTServer.test_040_server_start_no_error_in_log(self)
 
