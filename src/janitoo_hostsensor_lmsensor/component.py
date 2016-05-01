@@ -62,8 +62,15 @@ class LmSensor(JNTComponent):
     """ Use lmsensor to retrieve sensors. """
 
     def __init__(self, bus=None, addr=None, **kwargs):
-        JNTComponent.__init__(self, 'hostsensor.lmsensor', bus=bus, addr=addr, name="LmSensor sensors",
-                product_name="LmSensor", product_type="Software", product_manufacturer="LmSensor", **kwargs)
+        JNTComponent.__init__(self,
+            oid = kwargs.pop('oid', 'hostsensor.lmsensor'),
+            bus = bus,
+            addr = addr,
+            name = kwargs.pop('name', "LmSensor sensors"),
+            product_name = kwargs.pop('product_name', "LmSensor"),
+            product_type = kwargs.pop('product_type', "Software"),
+            product_manufacturer = kwargs.pop('product_manufacturer', "Janitoo"),
+            **kwargs)
         self._lock =  threading.Lock()
         logger.debug("[%s] - __init__ node uuid:%s", self.__class__.__name__, self.uuid)
         self._lmsensor_last = False
