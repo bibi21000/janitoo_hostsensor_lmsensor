@@ -1,0 +1,22 @@
+janitoo_hostsensor_lmsensor package
+===================================
+
+Submodules
+----------
+
+janitoo_hostsensor_lmsensor.component module
+--------------------------------------------
+
+.. automodule:: janitoo_hostsensor_lmsensor.component
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: janitoo_hostsensor_lmsensor
+    :members:
+    :undoc-members:
+    :show-inheritance:

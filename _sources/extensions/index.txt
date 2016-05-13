@@ -1,0 +1,13 @@
+janitoo_hostsensor_lmsensor package
+===================================
+
+Show janitoo's extensions.
+
+Core extensions
+---------------
+
+Components
+^^^^^^^^^^
+
+ - hostsensor.lmsensor (janitoo_hostsensor_lmsensor.component:make_lmsensor)
+
