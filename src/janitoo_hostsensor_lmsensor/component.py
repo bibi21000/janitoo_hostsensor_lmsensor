@@ -139,7 +139,7 @@ class LmSensor(JNTComponent):
                             _lmsensor['%s'%chip] = {}
                             for feature in chip:
                                 _lmsensor['%s'%chip][feature.label] = feature.get_value()
-                    except:
+                    except Exception:
                         logger.exception("[%s] - Exception in get_lmsensor", self.__class__.__name__)
                     finally:
                         pysensors.cleanup()
@@ -149,7 +149,7 @@ class LmSensor(JNTComponent):
                                 if config in _lmsensor[chip] :
                                     self.values[val_id].set_data_index(config=config, data=_lmsensor[chip][config])
                     self._lmsensor_last = True
-                except:
+                except Exception:
                     logger.exception("[%s] - Exception in get_lmsensor", self.__class__.__name__)
                     self._lmsensor_last = False
                 finally:
