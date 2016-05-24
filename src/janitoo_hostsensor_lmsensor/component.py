@@ -42,7 +42,6 @@ from janitoo.thread import JNTBusThread
 from janitoo.bus import JNTBus
 from janitoo.classes import COMMAND_DESC
 
-
 ##############################################################
 #Check that we are in sync with the official command classes
 #Must be implemented for non-regression
@@ -55,6 +54,8 @@ assert(COMMAND_DESC[COMMAND_METER] == 'COMMAND_METER')
 assert(COMMAND_DESC[COMMAND_CONFIGURATION] == 'COMMAND_CONFIGURATION')
 ##############################################################
 
+from janitoo_hostsensor import OID
+
 def make_lmsensor(**kwargs):
     return LmSensor(**kwargs)
 
@@ -63,7 +64,7 @@ class LmSensor(JNTComponent):
 
     def __init__(self, bus=None, addr=None, **kwargs):
         JNTComponent.__init__(self,
-            oid = kwargs.pop('oid', 'hostsensor.lmsensor'),
+            oid = kwargs.pop('oid', '%s.lmsensor'%OID),
             bus = bus,
             addr = addr,
             name = kwargs.pop('name', "LmSensor sensors"),
