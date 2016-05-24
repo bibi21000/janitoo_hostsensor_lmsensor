@@ -94,7 +94,7 @@ class LmSensor(JNTComponent):
         )
         config_value = self.values[uuid].create_config_value(help='The name of the lmsensor', label='sensor_name', type=0x08)
         self.values[config_value.uuid] = config_value
-        poll_value = self.values[uuid].create_poll_value(default=90)
+        poll_value = self.values[uuid].create_poll_value(default=60)
         self.values[poll_value.uuid] = poll_value
 
         uuid="voltage"
